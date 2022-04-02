@@ -1,5 +1,5 @@
 use clap::Parser;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use reqwest as request;
 use reqwest::Error;
 
@@ -14,7 +14,7 @@ struct Args {
     market: String
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug)]
 struct Market {
     name: String,
     price: f32,
@@ -26,7 +26,7 @@ struct Market {
     market_type: String
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug)]
 struct APIResponse {
     success: bool,
     result: Market
@@ -44,7 +44,6 @@ async fn fetch(market: &str) -> Result<APIResponse, Error> {
     Ok(response)
 }
 
-// #[tokio::main]
 fn main() {
     let args = Args::parse();
 

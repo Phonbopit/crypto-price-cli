@@ -1,6 +1,6 @@
 [package]
 name = "crypto-price-cli"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Chai Phonbopit"]
 edition = "2021"
 description = "CLI to get crypto price from ftx spot market."
