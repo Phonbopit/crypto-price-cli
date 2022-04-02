@@ -1,9 +1,15 @@
 [package]
 name = "crypto-price-cli"
 version = "0.1.0"
+authors = ["Chai Phonbopit"]
 edition = "2021"
+description = "CLI to get crypto price from ftx spot market."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 clap = { version = "3.1.8", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
