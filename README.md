@@ -17,6 +17,11 @@ cargo run -- -m ETH/USD
 cargo run -- --help
 ```
 
+## TODOs
+
+- [ ] Format & Display the output.
+- [ ] Update usage and more options.
+
 ### APIs
 
 - [FTX API](https://docs.ftx.com/)
