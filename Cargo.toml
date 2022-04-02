@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Chai Phonbopit"]
 edition = "2021"
 description = "CLI to get crypto price from ftx spot market."
+repository = "https://github.com/phonbopit/crypto-price-cli"
 license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
